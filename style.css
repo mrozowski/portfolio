@@ -111,9 +111,10 @@ h4 {
     cursor: pointer;
 }
 
-.icon:hover {
-    transform: translateY(-0.5rem);
-
+@media (hover: hover) and (pointer: fine) {
+    .icon:hover {
+        transform: translateY(-0.5rem);
+    }
 }
 
 .card {
@@ -187,14 +188,6 @@ h4 {
     color: var(--primary-color);
 }
 
-.card-link img {
-    transition: transform 300ms ease-in;
-}
-
-.card-link:hover img {
-    transform: translateX(0.5rem);
-}
-
 .skill {
     display: inline-block;
     border-radius: 1rem;
@@ -242,10 +235,6 @@ nav ul li {
     transition: transform 0.3s ease;
 }
 
-nav ul li:hover, .li-hovered {
-    transform: translateX(0.5rem);
-}
-
 nav ul li::before {
     content: '';
     display: inline-block;
@@ -256,10 +245,19 @@ nav ul li::before {
     transition: background-color 0.3s ease;
 }
 
-nav ul li:hover::before, .li-hovered::before {
+.li-hovered::before {
     background-color: var(--primary-color);
 }
 
+@media (hover: hover) and (pointer: fine) {
+    nav ul li:hover, .li-hovered {
+        transform: translateX(0.5rem);
+    }
+
+    nav ul li:hover::before {
+        background-color: var(--primary-color);
+    }
+}
 
 /* Page section title */
 
@@ -365,8 +363,8 @@ nav ul li:hover::before, .li-hovered::before {
     /* Navigation */
     nav {
         position: fixed;
-        top:0;
-        left:0;
+        top: 0;
+        left: 0;
         width: 100%;
         padding: 0;
     }
@@ -413,9 +411,6 @@ nav ul li:hover::before, .li-hovered::before {
         display: none;
     }
 
-    .icon:hover {
-        transform: unset;
-    }
 
     .fixed {
         position: unset;
@@ -477,11 +472,11 @@ nav ul li:hover::before, .li-hovered::before {
         flex-direction: column;
     }
 
-    .project-card h3{
+    .project-card h3 {
         text-align: justify;
     }
 
-    .card-link {
+    .project-card .card-link {
         justify-content: center;
     }
 
@@ -494,9 +489,10 @@ nav ul li:hover::before, .li-hovered::before {
         padding: 1rem;
     }
 
-    .subsection .line{
+    .subsection .line {
         width: 100%;
     }
+
     .subsection .text {
         padding: 0 1rem;
     }
