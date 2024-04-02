@@ -13,35 +13,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<section class="max-vh main-column fixed" style="background-color: #30343F">
+<section class="max-vh main-column fixed">
     <h1>Szymon Mrozowski</h1>
-    <h2>Software Developer Expert</h2>
+    <h2>Software Developer</h2>
 
-    <p class="margin-top">
+    <code class="margin-top emphasize">
         I build scalable and robust backend </br>systems that solve real-life problems.
-    </p>
+    </code>
 
     <nav>
         <ul>
-            <li>About</li>
-            <li>Experience</li>
-            <li>Education</li>
-            <li>Projects</li>
-            <li>Skills</li>
+            <li class="li-hovered"><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
         </ul>
     </nav>
 
     <div class="social-media">
-        <div class="icon">
+        <a class="icon" href="https://github.com/mrozowski" target=”_blank”>
             <img src="resources/icons/github-icon.svg" alt="Github Icon"/>
-        </div>
-        <div class="icon">
+        </a>
+        <a class="icon" href="https://www.behance.net/szymonmrozowski" target=”_blank”>
             <img src="resources/icons/be-icon.svg" alt="Behance Icon"/>
-        </div>
-        <div class="icon">
+        </a>
+        <a class="icon" href="https://www.linkedin.com/in/szymon-mrozowski/" target=”_blank”>
             <img src="resources/icons/linkedin-icon.svg" alt="LinkedIn Icon"/>
-        </div>
-        <div class="icon">
+        </a>
+        <div class="icon" onclick="copyEmailToClipboard()">
             <img src="resources/icons/gmail-icon.svg" alt="Gmail Icon"/>
         </div>
     </div>
@@ -50,146 +50,336 @@
 
 <section class="main-column"></section>
 
-<section class="max-vh main-column">
+<section class="main-column">
 
-    <p>
-        I am a highly motivated and skilled Java developer working professionally since 2021. Throughout my journey
-        since high school, I have developed a deep passion for software development, architecture, and problem-solving.
-        I like to create efficient, testable, and reliable software that solves real-world problems.
-    </p>
+    <div id="about">
+        <p>
+            I am a highly motivated and skilled Java developer working professionally since 2021. Throughout my journey
+            since high school, I have developed a deep passion for software development, architecture, and
+            problem-solving. I like to create efficient, testable, and reliable software that solves real-world
+            problems.
+        </p>
 
-    <p>
-        Previously I worked in a startup with a very dynamic environment where I had to constantly learn new
-        technologies and different approaches to project development. I can learn pretty fast anything that is required
-        for the project.
-    </p>
+        <p>
+            I am confident that my technical skills, my passion for problem-solving, and dedication to delivering
+            high-quality code will make me a valuable asset to your team.
+        </p>
 
-    <p>
-        I am confident that my technical skills, my passion for problem-solving, and dedication to delivering
-        high-quality code, will make me a valuable asset to your team.
-    </p>
+        <p>
+            In my free time, I enjoy drawing, designing, playing the guitar, and walking. Aside from programming
+            languages I also like human language and currently, I am learning Indonesian to revisit my friends.
+        </p>
+    </div>
 
-    <div class="card margin-top">
-        <div class="card-date">
-            <span>2021.04 - 2023.07</span>
+    <div id="experience">
+        <section class="subsection">
+            <div class="line"></div>
+            <div class="text">Experience</div>
+            <div class="line"></div>
+        </section>
+
+        <div class="card margin-top">
+            <div class="card-date">
+                <span>2021.04 - 2023.07</span>
+            </div>
+            <div class="card-content">
+                <a href="https://www.silenteight.com/" target=”_blank” class="card-link">
+                    <h3>Java Developer | SilentEight</h3> <img src="resources/icons/arrow.svg" alt="arrow">
+                </a>
+                <p>
+                    I developed an Anti-Money Laundering (AML) platform powered by AI. My main responsibility was
+                    developing
+                    microservices to integrate our platform with clients' systems. I utilized cutting edge technologies
+                    to
+                    build scalable, real-time solutions with high performance. Collaborating with various teams from
+                    other
+                    countries and large international financial institutions improved my experience, communication, and
+                    teamwork skills.
+                </p>
+                <div class="card-skills">
+                    <span class="skill">Java</span>
+                    <span class="skill">Spring Boot</span>
+                    <span class="skill">PostgreSQL</span>
+                    <span class="skill">RabbitMQ</span>
+                    <span class="skill">gRPC</span>
+                    <span class="skill">Hibernate</span>
+                    <span class="skill">Docker</span>
+                    <span class="skill">Junit</span>
+                    <span class="skill">Spock</span>
+                    <span class="skill">DDD</span>
+                    <span class="skill">Clean code</span>
+                </div>
+            </div>
         </div>
-        <div class="card-content">
-            <h3>Java Developer | SilentEight</h3>
-            <p>
-                I developed an Anti-Money Laundering (AML) platform powered by AI. My main responsibility was developing
-                microservices to integrate our platform with clients' systems. I utilized cutting edge technologies to
-                build scalable, real-time solutions with high performance. Collaborating with various teams from other
-                countries and large international financial institutions improved my experience, communication, and
-                teamwork skills.
-            </p>
-            <div class="card-skills">
-                <span class="skill">Java</span>
-                <span class="skill">Spring Boot</span>
-                <span class="skill">PostgreSQL</span>
-                <span class="skill">RabbitMQ</span>
-                <span class="skill">gRPC</span>
-                <span class="skill">Hibernate</span>
-                <span class="skill">Docker</span>
-                <span class="skill">Junit</span>
-                <span class="skill">Spock</span>
-                <span class="skill">DDD</span>
-                <span class="skill">Clean code</span>
+
+        <div class="card">
+            <div class="card-date">
+                <span>2020.05 - 2021.03</span>
+            </div>
+            <div class="card-content">
+                <h3>User Experience Designer | Fuddi</h3>
+                <p>
+                    Fuddi was a small idea I developed with friends from collage. It was a platform to connect food
+                    producers with customers to omit middle men who take a large commission. I was mostly responsible
+                    for UX/UI destining, business planning and market research.
+                </p>
+                <div class="card-skills">
+                    <span class="skill">Market research</span>
+                    <span class="skill">Business planning</span>
+                    <span class="skill">UX/UI designing</span>
+                    <span class="skill">Figma</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-date">
+                <span>2019.09 - 2019.10</span>
+            </div>
+            <div class="card-content">
+                <h3>Internship | Statistical Office in Lublin</h3>
+                <p>
+                    Internship as a developer in Statistical Office. I was responsible for writing C# code and efficient
+                    SQL queries.
+                </p>
+                <div class="skills">
+                    <span class="skill">C#</span>
+                    <span class="skill">Microsoft SQL</span>
+                    <span class="skill">Query optimization</span>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-date">
-            <span>2020.05 - 2021.03</span>
+    <div id="education">
+        <section class="subsection">
+            <div class="line"></div>
+            <div class="text">Education</div>
+            <div class="line"></div>
+        </section>
+
+        <div class="card margin-top">
+            <div class="card-date">
+                <span>2020 - 2022</span>
+            </div>
+            <div class="card-content">
+                <h3>Master's degree | Information Technology</h3>
+                <h4>Catholic University of Lublin</h4>
+                <ul>
+                    <li>Received the Rector's Scholarship for outstanding students.</li>
+                    <li>Completion of master's studies with honors.</li>
+                </ul>
+            </div>
         </div>
-        <div class="card-content">
-            <h3>UX/UI Designer | Fuddi</h3>
-            <p>
-                Fuddi was a small idea I developed with friends from Collage. It was a platform to connect food
-                producers with customers to omit middle men who take a large commission. I was mostly responsible for
-                UX/UI destining, business planning and market research.
-            </p>
-            <div class="card-skills">
-                <span class="skill">Market research</span>
-                <span class="skill">Business planning</span>
-                <span class="skill">UX/UI designing</span>
-                <span class="skill">Figma</span>
+
+        <div class="card">
+            <div class="card-date">
+                <span>2017 - 2020</span>
+            </div>
+            <div class="card-content">
+                <h3>Bachelor's degree | Information Technology</h3>
+                <h4>Catholic University of Lublin</h4>
+                <ul>
+                    <li>Received the Rector's Scholarship for outstanding students.</li>
+                    <li>Completion of Bachelor’s studies with honors.</li>
+                </ul>
             </div>
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-date">
-            <span>2019.09 - 2019.10</span>
+    <div id="projects">
+        <section class="subsection">
+            <div class="line"></div>
+            <div class="text">Projects</div>
+            <div class="line"></div>
+        </section>
+
+        <div class="project-card margin-top">
+            <div class="card-image">
+                <img src="resources/pictures/project-reservation.jpg" alt="Plane in the sky">
+            </div>
+            <div class="card-content">
+                <a href="https://github.com/mrozowski/reservation-lock-demo" target=”_blank” class="card-link">
+                    <h3>Reservation System</h3>
+                </a>
+                <p>
+                    A personal project where I showcase my skills in technologies, design architecture, and development
+                    methodologies such as BDD and TDD.
+                </p>
+            </div>
         </div>
-        <div class="card-content">
-            <h3>Internship | Statistical Office in Lublin</h3>
-            <p>
-                Internship as developer in Statistical Office. I was responsible for writing C# code and efficient SQL
-                queries.
-            </p>
-            <div class="card-skills">
-                <span class="skill">C#</span>
-                <span class="skill">Microsoft SQL</span>
-                <span class="skill">Query optimization</span>
+
+        <div class="project-card">
+            <div class="card-image">
+                <img src="resources/pictures/project-machine-learning.jpg" alt="Abstract image">
+            </div>
+            <div class="card-content">
+                <a href="https://www.linkedin.com/pulse/amazing-ability-machine-learning-find-strategy-how-play-mrozowski/"
+                   target=”_blank” class="card-link">
+                    <h3>The amazing ability of machine learning to find a strategy. How to play the TicTacToe game</h3>
+                </a>
+                <p>
+                    An article about how a machine learns to play TicTacToe game. For this purpose, I made my own GUI
+                    app in Python.
+                </p>
             </div>
         </div>
     </div>
 
-    <div class="card margin-top">
-        <div class="card-date">
-            <span>2020 - 2022</span>
+    <div id="skills">
+        <section class="subsection">
+            <div class="line"></div>
+            <div class="text">Skills</div>
+            <div class="line"></div>
+        </section>
+
+        <div class="skills-card margin-top">
+            <h3>Tech stack</h3>
+            <div class="skills">
+                <span class="skillB">Java</span>
+                <span class="skillB">Kotlin</span>
+                <span class="skillB">Python</span>
+                <span class="skillB">Spring Boot</span>
+                <span class="skillB">PostgreSQL</span>
+                <span class="skillB">MongoDB</span>
+                <span class="skillB">Hibernate</span>
+                <span class="skillB">RabbitMQ</span>
+                <span class="skillB">Rest API</span>
+                <span class="skillB">gRPC</span>
+            </div>
         </div>
-        <div class="card-content">
-            <h3>Master's degree | Information Technology</h3>
-            <h4>Catholic University of Lublin</h4>
-            <ul>
-                <li>Received the Rector's Scholarship for outstanding students.</li>
-                <li>Completion of master's studies with honors.</li>
-            </ul>
+
+        <div class="skills-card">
+            <h3>Tools</h3>
+            <div class="skills">
+                <span class="skillB">Git</span>
+                <span class="skillB">Linux</span>
+                <span class="skillB">Intellij</span>
+                <span class="skillB">Liquibase</span>
+                <span class="skillB">Docker</span>
+                <span class="skillB">Kubernetes</span>
+                <span class="skillB">Jira</span>
+                <span class="skillB">Confluence</span>
+                <span class="skillB">Jenkins</span>
+                <span class="skillB">Grafana</span>
+                <span class="skillB">SonarQube</span>
+                <span class="skillB">ELK</span>
+            </div>
+        </div>
+
+        <div class="skills-card">
+            <h3>Testing</h3>
+            <div class="skills">
+                <span class="skillB">Junit</span>
+                <span class="skillB">Spock</span>
+                <span class="skillB">Cucumber</span>
+                <span class="skillB">Test Containers</span>
+                <span class="skillB">Unit Testing</span>
+                <span class="skillB">Integration Testing</span>
+                <span class="skillB">End-to-End Testing</span>
+            </div>
+        </div>
+
+        <div class="skills-card">
+            <h3>Software Development Practices</h3>
+            <div class="skills">
+                <span class="skillB">DDD</span>
+                <span class="skillB">Hexagonal Architecture</span>
+                <span class="skillB">Clean code</span>
+                <span class="skillB">Debugging</span>
+                <span class="skillB">TDD</span>
+                <span class="skillB">BDD</span>
+            </div>
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-date">
-            <span>2017 - 2020</span>
-        </div>
-        <div class="card-content">
-            <h3>Bachelor's degree | Information Technology</h3>
-            <h4>Catholic University of Lublin</h4>
-            <ul>
-                <li>Received the Rector's Scholarship for outstanding students.</li>
-                <li>Completion of Bachelor’s studies with honors.</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="project-card margin-top">
-        <div class="card-image">
-            <img src="resources/pictures/project-reservation.jpg" alt="Plane in the sky">
-        </div>
-        <div class="card-content">
-            <h3>Reservation System</h3>
-            <p>
-                Personal project where I showcase my skills in technologies, design architecture, and development
-                methodologies such as BDD and TDD.
-            </p>
-        </div>
-    </div>
-
-    <div class="project-card">
-        <div class="card-image">
-            <img src="resources/pictures/project-machine-learning.jpg" alt="Abstract image">
-        </div>
-        <div class="card-content">
-            <h3>The amazing ability of machine learning to find a strategy. How to play the TicTacToe game</h3>
-            <p>
-                An article about how machine learns to play TicTacToe game. For this purpose I made my own GUI app in
-                Python.
-            </p>
-        </div>
-    </div>
+    <p class="margin-top" style="text-align: end; font-weight: 200; font-size: 0.8rem">
+        I made this portfolio using JS, HTML, CSS and Figma
+    </p>
 
 </section>
+<div id="snackbar">Email was copied to clipboard</div>
+<script>
+
+    // Skill card animation effect
+    const containers = document.getElementsByClassName('skills-card');
+
+    for (let i = 0; i < containers.length; i++) {
+        const container = containers[i];
+        const elements = container.querySelectorAll('.skillB');
+
+        elements.forEach((element, index) => {
+            element.style.transitionDelay = `${index * 0.04}s`;
+        });
+    }
+
+    // Update navigation when scrolling
+    const navLinks = document.querySelectorAll('nav ul li');
+
+    function isReachBottom() {
+        return (window.innerHeight + window.scrollY) >= document.body.scrollHeight;
+    }
+
+    window.addEventListener("scroll", function () {
+        let fromTop = window.scrollY;
+
+        // When scroll to bottom set last nav element as active.
+        // If the last section is not tall enough it will not trigger nav update
+        if (isReachBottom()) {
+            navLinks.forEach(link => {
+                link.classList.remove("li-hovered");
+            })
+            navLinks[navLinks.length - 1].classList.add("li-hovered");
+            return;
+        }
+
+        // Update nav depending on window position
+        navLinks.forEach(link => {
+            let section = document.querySelector(link.getElementsByTagName('a')[0].hash);
+            if (
+                section.offsetTop - 50 <= fromTop &&
+                section.offsetTop - 50 + section.offsetHeight > fromTop
+            ) {
+                link.classList.add("li-hovered");
+            } else {
+                link.classList.remove("li-hovered");
+            }
+        });
+    }, {passive: true});
+
+    // Smooth scroll on navigation click
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.parentElement.addEventListener('click', function (e) {
+            e.preventDefault();
+            let anchorElement = anchor.getAttribute('href');
+            if (anchorElement === "#about") {
+                document.body.scrollIntoView({behavior: 'smooth'});
+            } else {
+                document.querySelector(anchorElement).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // Copy email and show snackbar
+    const email = "mrozowskion@gmail.com";
+    const snackbar = document.getElementById("snackbar");
+    let timeout = null;
+
+    function copyEmailToClipboard() {
+
+        navigator.clipboard.writeText(email);
+
+        if (timeout != null) {
+            return
+        }
+        snackbar.className = "show";
+        timeout = setTimeout(() => {
+            snackbar.className = snackbar.className.replace("show", "");
+            timeout = null;
+        }, 3000)
+    }
+</script>
 </body>
 </html>
