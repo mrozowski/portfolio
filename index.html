@@ -320,32 +320,36 @@
         return (window.innerHeight + window.scrollY) >= document.body.scrollHeight;
     }
 
-    window.addEventListener("scroll", function () {
-        let fromTop = window.scrollY;
+    function updateNav() {
+        const fromTop = window.scrollY;
 
         // When scroll to bottom set last nav element as active.
         // If the last section is not tall enough it will not trigger nav update
         if (isReachBottom()) {
-            navLinks.forEach(link => {
-                link.classList.remove("li-hovered");
-            })
+            navLinks.forEach(link => link.classList.remove("li-hovered"));
             navLinks[navLinks.length - 1].classList.add("li-hovered");
             return;
         }
 
-        // Update nav depending on window position
-        navLinks.forEach(link => {
-            let section = document.querySelector(link.getElementsByTagName('a')[0].hash);
-            if (
-                section.offsetTop - 50 <= fromTop &&
-                section.offsetTop - 50 + section.offsetHeight > fromTop
-            ) {
+        let found = false;
+        for (const link of navLinks) {
+            const pageName = link.querySelector('a').hash;
+            const section = document.querySelector(pageName);
+            if (section.offsetTop - 50 <= fromTop && section.offsetTop - 50 + section.offsetHeight > fromTop) {
                 link.classList.add("li-hovered");
+                found = true;
             } else {
                 link.classList.remove("li-hovered");
             }
-        });
-    }, {passive: true});
+        }
+
+        if (!found) {
+            navLinks[0].classList.add("li-hovered");
+        }
+    }
+
+    window.addEventListener("scroll", updateNav, { passive: true });
+
 
     // Smooth scroll on navigation click
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
